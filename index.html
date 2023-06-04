@@ -46,7 +46,7 @@
         <li><a href="#skills" class="nav-link skills">Skills</a></li>
         <li><a href="#projects" class="nav-link projects">Projects</a></li>
         <li><a href="#contact" class="nav-link contact" >Contact</a></li>
-        <li><a class="nav-link resume"  id="resume-link-1" download="" href="./assets/pdf/Raj-Thakur-Resume.pdf"
+        <li><a class="nav-link resume"  id="resume-button-1" download="" href="./assets/pdf/Raj-Thakur-Resume.pdf"
               onclick="window.open('https://drive.google.com/file/d/1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG/view?usp=sharing')">
                 <i class="uil uil-message nav__icon"></i> Resume
               </a></li>
@@ -59,7 +59,7 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="nav-link home" id="home">
+      <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
@@ -73,7 +73,7 @@
             <div class="home__data">
               <h1 class="home__title"  id="user-detail-name">Hello, I'm Raj Thakur</h1>
               <h3 class="home__subtitle">Java Backend Developer</h3>
-              <p class="home__description" id="user-detail-intro">
+              <p class="home__description">
                 Motivated Java Backend Developer experienced in Java, SQL, Hibernate, and
                 JavaScript. Committed to delivering high-quality code and seamless user
                 experiences. Passionate about staying updated with emerging technologies.
@@ -104,7 +104,7 @@
         <div class="about__container container">
 
           <div class="about__data">
-            <p class="about__description" >
+            <p class="about__description" id="user-detail-intro">
               Motivated Java Backend Developer experienced in Java, SQL, Hibernate, and
               JavaScript. Committed to delivering high-quality code and seamless user
               experiences. Passionate about staying updated with emerging technologies.
@@ -424,7 +424,7 @@
 
       <!--==================== Git Hub section ====================-->
 
-      <section style="width: 85%; margin: auto; margin-top: 70px">
+      <section style="width: 85%; margin: auto; margin-top: 70px" class="react-activity-calendar">
         <h2 class="section__title">Github Contributions</h2>
         <span class="section__subtitle">My Contributions</span>
         <div class="calendar" id="github-streak-stats" >
@@ -436,34 +436,26 @@
 
         <div class="gitStat" style="margin-top: 50px">
           <h2 class="section__title">Github Analytics</h2>
-          <span style="margin-bottom: 30px" class="section__subtitle"
-            >My Contributions</span
-          >
-          <div style="display: flex">
-            <img
-              style="width: 50%; height: 200px"
-              class="angit"
-              id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=developerrajthakur22&theme=buefy&show_icons=true"
-              alt=""
-            />
-            <img     id="github-top-langs" 
-              style="width: 50%; height: 200px"
-              class="angit"
-           
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=developerrajthakur22&theme=buefy&layout=compact"
-              alt=""
-            />
-
-            <img src="https://github-readme-streak-stats.herokuapp.com?user=developerrajthakur22&theme=buefy" alt="">
-            <!-- <img  id="github-stats-card" 
-            style="width: 50%; height: 200px"
-            class="angit"
-           
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=pkthapliyal&theme=buefy&layout=compact"
-            alt=""
-          /> -->
-          </div>
+          <span style="margin-bottom: 30px" class="section__subtitle">My Contributions</span>
+          <!-- <div> -->
+          <div>
+            <div style="width: 50% ;margin: auto;">
+              <img id="github-streak-stats" style="width: 100% ;margin: auto;"
+                src="https://github-readme-streak-stats.herokuapp.com?user=developerrajthakur22&theme=react&theme=buefy"
+                alt="streak-stat" />
+            </div>
+  
+            <div style="display: inline-flex;">
+              <img style="width: 50%; height: 200px" class="angit" id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=developerrajthakur22&theme=buefy&show_icons=true"
+                alt="" />
+              <br>
+              <img id="github-top-langs" style="width: 50%; height: 200px" class="angit"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=developerrajthakur22&theme=buefy&layout=compact"
+                alt="" />
+            </div>
+        </div>
+         
         </div>
       </section> 
 
