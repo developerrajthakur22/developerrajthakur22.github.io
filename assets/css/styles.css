@@ -2111,3 +2111,10 @@ form textarea {
 .contact_buttonss{
   color: var(--first-color);
 }
+
+#download-resume-btn{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(114, 140, 225);
+    font-size: 20px;
+}

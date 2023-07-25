@@ -149,23 +149,25 @@
               </div>
             </div>
             <div class="about__buttons">
-              <!-- <a href="https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG&export=download"  rel="noreferrer"
+            <!-- <a href="https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG&export=download"  rel="noreferrer"
               target="_blank" id="resume-button-2" download="">
               Download Resume
-            </a> -->
-
+            </a>  -->
+<!-- 
              <a href="https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG&export=download"
             rel="noreferrer" target="_blank" id="resume-button-2" download style="margin-right: 30px;">
-           Download Resume
-           </a>
+              Download Resume
+           </a> -->
        
            <!-- View Link  -->
-            <a href="https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG" 
+            <!-- <a href="https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG" 
             rel="noreferrer" target="_blank" id="resume-button-view">
               View Resume
-            </a> 
-
-            
+            </a>  -->
+            <!-- <button onclick="downloadAndViewResume()">Download and View Resume</button> -->
+            <a href="Raj-Thakur-Resume.pdf" id="resume-button-2" download>
+              <button onclick="openLink()" id="download-resume-btn">Download Resume </button>
+            </a>
             </div>
           </div>
         </div>
@@ -572,18 +574,27 @@
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
 
+    <script src="downloadbtn.js"></script>
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
     <!-- for git  -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   </body>
+  <script>
+    function openLink() {
+    // Replace 'https://example.com' with the actual URL you want to open
+    const linkUrl = 'https://drive.google.com/uc?id=1_zssm6sE0W1fJk4KYEIGTbH5m99fuCdG';
+    window.open(linkUrl, '_blank');
+    console.log("rhy")
+  }
+  </script>
 </html>
 
 <script>
   // or enable responsive functionality
   GitHubCalendar(".calendar", "developerrajthakur22", { responsive: true });
 
-
+  
 
 </script>
